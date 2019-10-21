@@ -2,6 +2,7 @@
   "extends": ["config:base"],
   "rangeStrategy": "replace",
   "postUpdateOptions": ["npmDedupe"],
+  "stabilityDays": 3,
   "packageRules": [
     {
       "packagePatterns": ["^rollup"],
