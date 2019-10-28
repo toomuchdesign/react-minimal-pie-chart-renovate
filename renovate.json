@@ -2,7 +2,6 @@
   "extends": ["config:base"],
   "rangeStrategy": "replace",
   "postUpdateOptions": ["npmDedupe"],
-  "stabilityDays": 3,
   "packageRules": [
     {
       "packagePatterns": ["^rollup"],
@@ -30,7 +29,12 @@
     },
     {
       "depTypeList": ["devDependencies"],
-      "rangeStrategy": "bump"
+      "rangeStrategy": "bump",
+      "automerge": true,
+      "stabilityDays": 3,
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
