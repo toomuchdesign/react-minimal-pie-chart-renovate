@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "schedule": "the first weekend of the month",
+  "schedule": "on the first weekend of the month",
   "rangeStrategy": "replace",
   "postUpdateOptions": ["npmDedupe"],
   "packageRules": [
